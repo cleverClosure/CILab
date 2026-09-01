@@ -10,6 +10,7 @@
 		09359C4FE76B57A8BF4FA3A9 /* BuildInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BD845CF10BD6DB7EF872A /* BuildInfoTests.swift */; };
 		4EB9F418FE2C6C157080B172 /* BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0504A5A6DB542A775B6B4961 /* BuildInfo.swift */; };
 		9121CDB601CBCCC8DF5F3A43 /* CILabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB35BBC32747DCB607B9DB8C /* CILabApp.swift */; };
+		E6B2D90212A0046502D5CE35 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 070FA37E1E4438277D0DAB80 /* OrderedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B2D90212A0046502D5CE35 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,7 @@
 			);
 			name = CILab;
 			packageProductDependencies = (
+				070FA37E1E4438277D0DAB80 /* OrderedCollections */,
 			);
 			productName = CILab;
 			productReference = D0BBA82379B859FCBE61AC27 /* CILab.app */;
@@ -208,6 +211,9 @@
 				en,
 			);
 			mainGroup = 5BF9C0E3006412EE3A159EC3;
+			packageReferences = (
+				3DD45DEA9CBE44D850C1BA04 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = BB792A06258F70D5A2DD7A5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -538,6 +544,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DD45DEA9CBE44D850C1BA04 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		070FA37E1E4438277D0DAB80 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE8992444B3CE72F29AFFD04 /* Project object */;
 }

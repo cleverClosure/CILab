@@ -5,6 +5,12 @@ import ProjectDescription
 
 let project = Project(
     name: "CILab",
+    packages: [
+        .remote(
+            url: "https://github.com/apple/swift-collections",
+            requirement: .upToNextMajor(from: "1.1.0")
+        ),
+    ],
     targets: [
         .target(
             name: "CILab",
@@ -14,6 +20,9 @@ let project = Project(
             deploymentTargets: .iOS("17.0"),
             infoPlist: .default,
             sources: ["CILab/Sources/**"],
+            dependencies: [
+                .package(product: "OrderedCollections"),
+            ],
             settings: .settings(base: [
                 "DEVELOPMENT_TEAM": "F5PC84GW85",
             ])
